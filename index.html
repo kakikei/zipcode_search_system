@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>郵便番号検索</title>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" href="image/favicon.ico">
+</head>
+<body>
+  <form action="js/load.js" method="post"><!--送信を行う場所はactionで選択を行う  -->
+    <div>
+      <label>郵便番号</label><input type="text" id="zipcode" name="zipcode">
+    </div>
+    <div class="button">
+      <button type="submit" name="submit">送信</button>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+
+    <!-- 自動入力されるフォーム -->
+    <div>
+      <label>都道府県</label><input type="text" id="state" name="state">
+    </div>
+    <div>
+      <label>市区町村</label><input type="text" id="city" name="city">
+    </div>
+    <div>
+      <label>番地</label><input type="text" id="adress" name="adress">
+    </div>
+    <!-- ここまで -->
+
+  </form>
+</body>
+</html>
