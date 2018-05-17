@@ -11,11 +11,11 @@
         var api_number = "http://zipcloud.ibsnet.co.jp/api/search?zipcode=";
         zipcode_url = api_number + document.forms.zipcode_form_id.zipcode.value;
         target.innerText = zipcode_url;
-        // fetch apiを利用予定
+        // fetch apiを利用予定 a
         fetch(zipcode_url)
         .then(response => response.text())
         .then(svg => document.body.insertAdjacentHTML("afterbegin", svg));
-        
+
       }
     </script>
   </head>
